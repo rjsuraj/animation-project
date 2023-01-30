@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    min-height: 100vh;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+.small-circle{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    animation: rotate 20s infinite linear;
+}
+
+.small-circle img:nth-child(1){
+    width: 140px;
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    animation: spin 40s infinite linear;
+}
+
+.small-circle img:nth-child(2){
+    width: 140px;
+    position: absolute;
+    bottom: -20%;
+    right: -20%;
+    animation: spin 40s infinite linear;
+}
+
+.small-circle img:nth-child(3){
+    width: 140px;
+    position: absolute;
+    bottom: -20%;
+    left: -20%;
+    animation: spin 40s infinite linear;
+}
+
+.small-circle img:nth-child(4){
+    width: 140px;
+    position: absolute;
+    top: -20%;
+    right: -20%;
+    animation: spin 40s infinite linear;
+}
+
+
+
+.big-circle{
+    border: 100px solid #f1e4ff;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.outer1-circle{
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    border: 100px solid white;
+    animation: spin 55s infinite linear;
+}
+
+
+.outer1-circle > img:nth-child(1){
+    width: 200px;
+    position: absolute;
+    top: -34%;
+    left: -20%;
+    animation: rotate 55s infinite linear;
+}
+
+.outer1-circle > img:nth-child(2){
+    width: 200px;
+    position: absolute;
+    top: -34%;
+    right: -20%;
+    animation: rotate 55s infinite linear;
+}
+
+.outer1-circle > img:nth-child(3){
+    width: 200px;
+    position: absolute;
+    bottom: -34%;
+    right: -20%;
+    animation: rotate 55s infinite linear;
+}
+
+.outer1-circle > img:nth-child(4){
+    width: 200px;
+    position: absolute;
+    bottom: -34%;
+    left: -20%;
+    animation: rotate 55s infinite linear;
+}
+
+.outer1-circle > img:nth-child(5){
+    width: 200px;
+    position: absolute;
+    top: 24%;
+    left: -50%;
+    animation: rotate 55s infinite linear;
+}
+
+.outer1-circle > img:nth-child(6){
+    width: 200px;
+    position: absolute;
+    top: 24%;
+    right: -50%;
+    animation: rotate 55s infinite linear;
+}
+
+.outer2-circle{
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    border: 10px solid #f1e4ff;
+}
+
+@keyframes rotate {
+    
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes spin {
+    
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
